@@ -1,0 +1,131 @@
+
+
+* {
+    font-size: 50px;
+    /* text-shadow: black 2px; */
+    background-attachment: fixed;
+    font-family: 'Bangers', cursive;
+    color: white;
+    text-shadow: rgb(88, 88, 88) 3px 3px;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    
+}
+img {
+    max-height: 4rem;
+    max-width: 4rem;
+
+}
+
+.findMeOn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: system-ui, sans-serif;
+    
+    /* this breaks position sticky in Firefox */
+    /* overflow-x: hidden; */
+}
+header {
+    grid-column: 1/3;
+    padding: 4rem;
+    text-align: center;
+    /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)); */
+    background:  url(../photos/montana.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+/* .headerDiv {
+    border: 1px solid red;
+    background: repeating-linear-gradient(45deg, grey, white);
+} */
+
+.underLine {
+        border-bottom: 4px solid white;
+        margin: 0 4rem 2rem 4rem;
+      
+}
+
+nav {
+    white-space: nowrap;
+    /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)) */
+   /* background: grey; */
+   /* background-image: url(../photos/grass.jpg); */
+   background: grey;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* Only stick if you can fit */
+  @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    /* color: white; */
+    text-decoration: none;
+  }
+  nav ul li a.current {
+    background: black;
+  }
+  main {
+    padding-bottom: 10rem;
+    background: whitesmoke;
+    font-size: 10px;
+    background-image: url(../photos/whitebrick.jpg) ;
+    background-size: 100% 40%;
+  }
+  
+  section {
+    padding: 2rem;
+    /* margin: 0 0 2rem 0; */
+  }
+  footer {
+    grid-column: 1 / 3;
+    /* background:  rgb(109, 110, 104); */
+    /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)); */
+    padding: 2rem 1rem;
+    background-image: url(../photos/fire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-top: 16px solid grey; */
+  }
+
+  p {
+      font-size: 30px;
+  }
+/* 
+  .section-1, .section-3 {
+      font-size: 10px;
+      background: whitesmoke;
+      background-image: url(../photos/wood.jpg) ; */
+
+      /* background: rgb(236, 219, 192); */
+  }
+
+  /* body {
+      background-image: url(../top-view-photography-of-blue-pool-tiles-347143.jpg);
+  } */
