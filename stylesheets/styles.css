@@ -15,61 +15,84 @@
 	}
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 
 * {
-    font-size: 50px;
-    /* text-shadow: black 2px; */
-    background-attachment: fixed;
-    font-family: 'Bangers', cursive;
-    /* color: white; */
-    text-shadow: rgb(88, 88, 88);
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 30px;   
-}
-
-img {
-    max-height: 4rem;
-    max-width: 4rem;
-}
-
-.findMeOn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 50px;
+  /* text-shadow: black 2px; */
+  background-attachment: fixed;
+  font-family: 'Bangers', cursive;
+  /* color: white; */
+  text-shadow: rgb(88, 88, 88);
+  /* color: white; */
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    font-family: system-ui, sans-serif;
-    
-    /* this breaks position sticky in Firefox */
-    /* overflow-x: hidden; */
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 header {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/3;
-    padding: 4rem;
-    text-align: center;
-    /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)); */
-    background:  url(../photos/montana.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    color: whitesmoke;
-    /* background: linear-gradient(45deg, rgb(50, 50, 122), rgb(13, 139, 241)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* grid-column: 1/3; */
+  /* padding: 4rem; */
+  text-align: center;
+  flex-shrink: 1;
+  /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)); */
+  background:  url(../photos/black-close-up-dark-dew-396547.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  color: whitesmoke;
+  min-height: 100vh;
+  
 }
+
+.typewriter{
+  font-size: 30px;
+  margin: 0 4rem 4rem 4rem;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor*/
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; Gives that scrolling effect as the typing happens
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+.underLine {
+  border-bottom: 4px solid white;
+  margin: 0 4rem 4rem 4rem;
+}
+/* This is the nav icons */
+nav {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
 .icons-header {
   display: flex;
@@ -78,65 +101,46 @@ header {
   align-items: stretch;
   font-size: 10px;
   list-style-type: none;
-}
-li:hover {
-    animation: bounce 1s;
-}
-
-.icons-header > img {
-  flex-direction: row;
-}
-
-.underLine {
-        border-bottom: 4px solid white;
-        margin: 0 4rem 2rem 4rem;
-}
-
-nav {
-    white-space: nowrap;
-    /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)) */
-   /* background: grey; */
-   /* background-image: url(../photos/grass.jpg); */
-   background: grey;
-   color: rgb(95, 92, 92);
-  }
+  color: white;
+  background: rgb(145, 143, 143);
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+}
+.fire{
+  background-image: url(../photos/fire.jpg);
+  background-size: 100% 100%;
+  padding: 4rem;
+}
 
-  /* Only stick if you can fit */
-  @media (min-height: 300px) {
-    nav ul {
-      position: sticky;
-      top: 0;
-    }
-  }
-  nav ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: white;
-    text-decoration: none;
-  }
-  nav ul li a.current {
-    background: black;
-  }
+li:hover {
+  animation: bounce 1s;
+}
+
+
+/* Github,gmail */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 30px;   
+}
+
+.links img {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+
 
   main {
     padding-bottom: 10rem;
     background: whitesmoke;
     font-size: 10px;
     color: black;
-    /* background-image: url(../photos/whitebrick.jpg) ;
-    background-size: 100% 40%; */
   }
   
   section {
-    padding: 2rem;
-    /* margin: 0 0 2rem 0; */
+    padding: 2rem 3rem;
   }
+
   footer {
     grid-column: 1 / 3;
     /* background:  rgb(109, 110, 104); */
@@ -158,3 +162,6 @@ nav {
       color: black;
   }
 
+  a:visited{
+    color: white;
+  }
