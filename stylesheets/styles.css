@@ -28,6 +28,7 @@
 }
 
 * {
+  /* display: flex; */
   font-size: 50px;
   /* text-shadow: black 2px; */
   background-attachment: fixed;
@@ -59,6 +60,7 @@ header {
   background-size: 100% 100%; 
   color: whitesmoke;
   min-height: 100vh;
+  /* border-bottom: orange 2px solid; */
   
 }
 
@@ -78,8 +80,16 @@ header {
 }
 
 .underLine {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid;
+  border-color: orange;
   margin: 0 4rem 4rem 4rem;
+    /* max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px; */
+
+  
 }
 /* This is the nav icons */
 nav {
@@ -102,13 +112,19 @@ nav ul {
   font-size: 10px;
   list-style-type: none;
   color: white;
-  background: rgb(145, 143, 143);
+  background: orange;
   
 }
+
+.icons-image {
+  filter: invert(1);
+}
+
 .fire{
-  background-image: url(../photos/fire.jpg);
+  background-image: url(../photos/headshot.jpg);
   background-size: 100% 100%;
   padding: 4rem;
+  filter: grayscale(100%);
 }
 
 li:hover {
@@ -141,27 +157,42 @@ li:hover {
     padding: 2rem 3rem;
   }
 
+  
+  p {
+    font-size: 30px;
+  }
+  
+  .section-1, .section-3 {
+    font-size: 10px;
+    background: whitesmoke;
+    color: black;
+  }
+  
+  .section-3 {
+    /* background-image: url(../photos/work-table.jpg); */
+    background-size: 100% 100%;
+    padding: 2rem 2rem;
+    /* filter: grayscale(50%); */
+    /* filter: invert(.8); */
+    background-color: orange;
+  }
+  
+  a:visited{
+    color: white;
+  }
+  
   footer {
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
     /* background:  rgb(109, 110, 104); */
     /* background-image: linear-gradient(45deg, rgb(228, 245, 81), rgb(30, 110, 37)); */
-    padding: 2rem 1rem;
+    padding: 4rem 4rem;
     background: rgb(65, 62, 62);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-image: url(../photos/signature.jpg); */
+    filter: invert(.89);
+    /* filter: grayscale(90%); */
+    background-size: 100% 100%;
     /* border-top: 16px solid grey; */
-  }
-
-  p {
-      font-size: 30px;
-  }
-
-  .section-1, .section-3 {
-      font-size: 10px;
-      background: whitesmoke;
-      color: black;
-  }
-
-  a:visited{
-    color: white;
+    list-style-type: none;
   }
