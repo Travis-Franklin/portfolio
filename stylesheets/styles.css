@@ -126,7 +126,8 @@ nav ul {
 .fire{
   background-image: url(../photos/headshot.jpg);
   background-size: 100% 100%;
-  padding: 4rem;
+  /* padding: 4rem; */
+  padding: 300px 300px;
   filter: grayscale(100%);
 }
 
