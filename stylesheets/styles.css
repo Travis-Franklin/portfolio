@@ -79,7 +79,7 @@ header {
 .underLine {
   border-bottom: 4px solid;
   border-color: orange;
-  margin: 0 100px;
+  margin: 150px 100px;
 
   
 }
@@ -151,7 +151,7 @@ li:hover {
 
 
   main {
-    padding-bottom: 10rem;
+    padding-bottom: 200px;
     background: whitesmoke;
     font-size: 10px;
     color: black;
@@ -187,14 +187,23 @@ li:hover {
   
   footer {
     /* padding: 4rem 4rem; */
-    background: rgb(65, 62, 62);
+    padding: 10px 0;
+    background: grey;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-image: url(../photos/signature.jpg); */
-    filter: invert(.89);
     background-size: 100% 100%;
     list-style-type: none;
-    color: black;
+    color: white;
+    
+   
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 30px; */
   }
 
   ul, a {
@@ -245,9 +254,9 @@ li:hover {
       align-items: center;
     }
     footer {
-      padding:0vw;
+      
       font-size: 20px;
-      margin: 0;
+      
     }
     .typewriter{
       white-space: normal; 
