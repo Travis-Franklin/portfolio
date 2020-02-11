@@ -172,7 +172,7 @@ li:hover {
   }
 
   .section-2 {
-    background: orange;
+    background: lightgray;
   }
   
   .section-3 {
@@ -194,6 +194,12 @@ li:hover {
     filter: invert(.89);
     background-size: 100% 100%;
     list-style-type: none;
+    color: black;
+  }
+
+  ul, a {
+    margin: 0px;
+    font-size: 25px;
   }
 
   @media only screen and (max-width: 650px){
