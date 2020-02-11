@@ -96,7 +96,7 @@ nav ul {
     padding: 0;
   }
 
-.language-icon{ 
+.language-icon { 
   display: flex;
   justify-content: space-between;
 }
@@ -199,7 +199,10 @@ li:hover {
   @media only screen and (max-width: 650px){
     * {
       font-size: 30px;
-      
+    }
+
+    .fire{
+      padding: 0vw;
     }
 
     h1, h2 {
