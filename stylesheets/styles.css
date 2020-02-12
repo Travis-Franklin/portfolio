@@ -31,9 +31,9 @@
 * {
   font-size: 50px;
   background-attachment: fixed;
-  font-family: 'Bangers', cursive;
+  /* font-family: 'Bangers', cursive; */
   text-shadow: rgb(88, 88, 88);
-
+  font-family: monospace;
 }
 
 html {
@@ -80,13 +80,28 @@ header {
   border-bottom: 4px solid;
   border-color: orange;
   margin: 150px 100px;
+  width: 65%;
 }
 
 h1 {
-  /* border-bottom: 4px solid;
+  font-family: 'Bangers', cursive;
+  border-bottom: 4px solid;
   border-color: orange;
-  margin: 0 100px; */
-  /* text-underline-position: below; */
+  margin: 150px 100px;
+  width: 65%;
+}
+
+h2 {
+  color: black;
+}
+
+ul {
+  color: black;
+}
+
+.download {
+  color: black;
+  justify-items: center;
 }
 
 /* This is the nav icons */
@@ -187,8 +202,11 @@ p {
   background-color: whitesmoke;
 }
 
-a:visited{
-  color: white;
+a:active {
+  color: gray;
+}
+a:visited {
+  color:black;
 }
 
 footer {
