@@ -147,7 +147,6 @@ nav ul {
 .fire{
   background-image: url(../photos/headshot.jpg);
   background-size: 100% 100%;
-  /* padding: 4rem; */
   padding: 300px 300px;
   filter: grayscale(100%);
 }
@@ -169,7 +168,6 @@ li:hover {
   max-height: 4rem;
   max-width: 4rem;
 }
-
 
 main {
   padding-bottom: 200px;
@@ -210,8 +208,7 @@ a:visited {
 }
 
 footer {
-  /* padding: 4rem 4rem; */
-  padding: 10px 0;
+  padding: 30px 0;
   background: grey;
   background-repeat: no-repeat;
   background-size: cover;
