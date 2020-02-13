@@ -238,6 +238,11 @@ footer {
 
 }
 
+.links a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 ul, a {
   margin: 0px;
