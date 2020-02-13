@@ -248,7 +248,13 @@ ul, a {
     * {
       font-size: 35px;
     }
-
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+    footer ul{
+      padding: 15px;
+    }
     .fire{
       /* padding: 0vw; */
       background-attachment: scroll;
