@@ -102,6 +102,8 @@ ul {
 .download {
   color: black;
   justify-items: center;
+  align-items: center;
+  size: 20px;
 }
 
 /* This is the nav icons */
@@ -195,9 +197,22 @@ p {
 }
 
 .section-3 {
+  
   background-size: 100% 100%;
   padding: 2rem 2rem;
   background-color: whitesmoke;
+}
+
+.download-container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.download-container:hover {
+  animation: bounce 1s;
 }
 
 a:active {
